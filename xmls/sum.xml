@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<methodCall>
+   <methodName>handler.sum</methodName>
+      <params>
+      	<param>
+      		<value><double>15.4</double></value>
+      	</param>
+      	<param>
+      		<value><double>9.3</double></value>
+      	</param>
+      </params>
+</methodCall>
