@@ -1,11 +1,18 @@
 package com.company;
 
+import org.apache.xmlrpc.XmlRpcException;
+
 import java.util.HashMap;
 
 public class Handler {
 
     public double sum(double x, double y){
         return x+y;
+    }
+
+    public String isException(Boolean cond) throws XmlRpcException {
+        if (cond) throw new XmlRpcException(418,"It's a TeaTime!");
+        else return "is Not";
     }
 
     public double avg(Object[] numbers){
