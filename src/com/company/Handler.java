@@ -1,8 +1,7 @@
 package com.company;
 
-/**
- * Created by Varn on 2016-11-18.
- */
+import java.util.HashMap;
+
 public class Handler {
 
     public double sum(double x, double y){
@@ -15,5 +14,15 @@ public class Handler {
             avg+=(Double)numbers[i];
         }
         return avg/numbers.length;
+    }
+
+    public HashMap getJanusz(){
+        Dude janusz = new Dude("Janusz",23);
+        return DudeConverter.fromDude(janusz);
+    }
+
+    public Boolean isMinor(HashMap dude){
+        Dude d = DudeConverter.toDude(dude);
+        return d.getAge()<18;
     }
 }

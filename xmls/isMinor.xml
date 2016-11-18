@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<methodCall>
+   <methodName>handler.isMinor</methodName>
+      <params>
+         <param>
+            <value>
+            <struct>
+            	<member>
+            		<name>name</name>
+            		<value>janusz</value>
+            	</member>
+            	<member>
+            		<name>age</name>
+            		<value><i4>20</i4></value>
+            	</member>
+            </struct>
+            </value>
+         </param>
+      </params>
+</methodCall>
